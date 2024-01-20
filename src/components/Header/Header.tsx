@@ -12,20 +12,6 @@ function Header() {
         <div className="header-text">TASKAPP</div>
 
         <ul className="link-wrapper">
-          {/* <li className="header-profile-wrapper">
-            <div className="profile-name">
-              <div className="profile-text">Menu</div>
-              <i className="fa-solid fa-chevron-down downIcon"></i>
-            </div>
-            <ul className="sublist">
-              <li>
-                <a href="#">Graph</a>
-              </li>
-              <li>
-                <a href="#">Task</a>
-              </li>
-            </ul>
-          </li> */}
           <li className="header-profile-wrapper">
             <div className="profile-name">
               <NavLink className={({ isActive }) => (isActive ? "profile-text active" : "profile-text")} to='/tasks'>Task</NavLink>
@@ -44,13 +30,13 @@ function Header() {
             </div>
             <ul className="sublist">
               <li onClick={()=>{myContext.handleProjectMethod("Add"); navigate("/tasks");}}>
-                <a href='#javascript'>Add Project</a>
+                <div className="sublist-title">Add Project</div>
               </li>
               <li onClick={()=>{myContext.handleProjectMethod("Edit"); navigate("/tasks");}}>
-                <a href='#javascript'>Edit Project</a>
+                <div className="sublist-title">Edit Project</div>
               </li>
               <li onClick={()=>{myContext.handleProjectMethod("Delete"); navigate("/tasks");}}>
-                <a href='#javascript'>Delete Project</a>
+                <div className="sublist-title">Delete Project</div>
               </li>
               <li>
                 <NavLink to="/login" onClick={()=>{myContext.handleLogout()}}>

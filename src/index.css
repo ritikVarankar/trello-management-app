@@ -209,6 +209,7 @@ body{
   width: 100%;
   padding: 1rem 2rem;
 }
+.sublist li .sublist-title,
 .sublist li a {
   text-decoration: none;
   color: var(--black-color); 
@@ -217,6 +218,7 @@ body{
 .sublist li:hover{
   background: var(--blue-color);
 }
+.sublist li:hover .sublist-title,
 .sublist li:hover a{
   color: var(--white-color);
 }

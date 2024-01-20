@@ -22,10 +22,10 @@ function RouteComponent() {
 
   return (
     <Switch>
-      <Route path="/" element={<Navigate to="/tasks" />} />
+      <Route path="/" element={<Navigate to="/login" />} />
       <Route path="login" element={<Login />} />
       <Route path="tasks" element={<ProtectedRoute><Task /></ProtectedRoute>} />
-      <Route path="graph" element={<Graph />} />
+      <Route path="graph" element={<ProtectedRoute><Graph /></ProtectedRoute>} />
       
       <Route path="*" element={<PageNotFound />} />
     </Switch>

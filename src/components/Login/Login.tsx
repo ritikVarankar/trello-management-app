@@ -122,14 +122,14 @@ function Login() {
         if(wrapper){
             wrapper.classList.add("active");
         }
-        // handleClear();
+        handleClear();
     }
     const signupHeaderFn=()=>{
         const wrapper:any = document.querySelector(".wrapper");
         if(wrapper){
             wrapper.classList.remove("active");
         }
-        // handleClear();
+        handleClear();
     }
 
 
