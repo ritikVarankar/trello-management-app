@@ -13,29 +13,29 @@ export const tasksSlice = createSlice({
   initialState: { status:"fulfilled", tasks: [
     {
       projectId: generateID(6),
-      project:'Test',
-      label: 'Test',
-      value: 'Test',
+      project:'Task Management',
+      label: 'Task Management',
+      value: 'Task Management',
       list:{
         Added:[
           {
             listId: generateID(5),
-            taskName:'Designing the health pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'Header Page',
+            description:'Create header page to compatible with all other pages',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
+                subTaskName:'Create header page',
+                checkedstatus:false
               },
               { 
                 id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
+                subTaskName:'Design header page',
+                checkedstatus:false
               },
               { 
                 id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Add header component to task and graph page',
                 checkedstatus:false
               }
             ],
@@ -45,207 +45,172 @@ export const tasksSlice = createSlice({
           },
           {
             listId: generateID(5),
-            taskName:'Develop pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'Project Page Option',
+            description:'Create project page option in header profile menu',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
+                subTaskName:'Add project option in header profile menu',
+                checkedstatus:false
               },
               { 
                 id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
+                subTaskName:'Edit project option in header profile menu',
+                checkedstatus:false
               },
               { 
                 id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Delete project option in header profile menu',
                 checkedstatus:false
               }
             ],
             status:'Added',
-            priority:'High',
-            date:'2023-01-01'
-          },
-          {
-            listId: generateID(5),
-            taskName:'Designing the health pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
-            subtasks:[
-              { 
-                id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
-                checkedstatus:false
-              }
-            ],
-            status:'Added',
-            priority:'High',
-            date:'2023-01-05'
-          },
-          {
-            listId: generateID(5),
-            taskName:'Develop pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
-            subtasks:[
-              { 
-                id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
-                checkedstatus:false
-              }
-            ],
-            status:'Added',
-            priority:'High',
+            priority:'Low',
             date:'2023-01-02'
           },
           {
             listId: generateID(5),
-            taskName:'Designing the health pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'Search Bar',
+            description:'Create search bar to search task by name and designation',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
+                subTaskName:'Design search bar',
                 checkedstatus:true
               },
               { 
                 id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Add search functionality',
                 checkedstatus:false
               }
             ],
             status:'Added',
-            priority:'High',
-            date:'2023-01-03'
-          },
-          {
-            listId: generateID(5),
-            taskName:'Develop pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
-            subtasks:[
-              { 
-                id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
-                checkedstatus:false
-              }
-            ],
-            status:'Added',
-            priority:'High',
-            date:'2023-01-03'
+            priority:'Medium',
+            date:'2023-01-02'
           },
         ],
         Started:[
           {
             listId: generateID(5),
-            taskName:'Designing the Motor pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'Sign In/Sign Up Validation',
+            description:'Create login validation for user',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Create login validation for user',
                 checkedstatus:false
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'Create register validation for user',
+                checkedstatus:true
               }
             ],
             status:'Started',
             priority:'High',
             date:'2023-01-01'
-          }
-        ],
-        Completed:[
+          },
           {
             listId: generateID(5),
-            taskName:'Designing the Car pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'Add Task Modal',
+            description:'Create add task reusable modal for edit purpose',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Add name, description and multiple sub tasks textfield',
                 checkedstatus:false
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'Add status(Added,Started,Completed) and priority(low,medium,high) dropdown',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'Add Task Add and Cancel button',
+                checkedstatus:true
               }
             ],
-            status:'Completed',
-            priority:'High',
+            status:'Started',
+            priority:'Medium',
             date:'2023-01-01'
           },
           {
             listId: generateID(5),
-            taskName:'Validate pages',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled',
+            taskName:'View Task Modal',
+            description:'Create view task',
             subtasks:[
               { 
                 id: generateID(3),
-                subTaskName:'Create login page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Create register page',
-                checkedstatus:true
-              },
-              { 
-                id: generateID(3),
-                subTaskName:'Add validation on login page',
+                subTaskName:'Add name, sub-task detail, priority and imp buttons',
                 checkedstatus:false
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'Add delete, view and delete button for task',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'On View button, task will be display',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'On Edit button, task will be edit',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'On delete button, delete modal appear',
+                checkedstatus:true
+              }
+            ],
+            status:'Started',
+            priority:'Medium',
+            date:'2023-01-02'
+          },
+        ],
+        Completed:[
+          {
+            listId: generateID(5),
+            taskName:'Sign In or Sign Up Pages',
+            description:'Create sign in or sign up page for user',
+            subtasks:[
+              { 
+                id: generateID(3),
+                subTaskName:'Design login page',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'Design register page',
+                checkedstatus:true
               }
             ],
             status:'Completed',
-            priority:'High',
+            priority:'Low',
             date:'2023-01-01'
+          },
+          {
+            listId: generateID(5),
+            taskName:'Delete Modal',
+            description:'Create delete button on view task',
+            subtasks:[
+              { 
+                id: generateID(3),
+                subTaskName:'Design delete button and modal',
+                checkedstatus:true
+              },
+              { 
+                id: generateID(3),
+                subTaskName:'If you click on delete button, delete modal popup open',
+                checkedstatus:true
+              }
+            ],
+            status:'Completed',
+            priority:'Medium',
+            date:'2023-01-02'
           },
         ], 
       }
