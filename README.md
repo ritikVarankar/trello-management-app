@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Task Management App
+Applications for task management are helpful for everyone, including students and business owners. It eases, expedites, and simplifies our lives. Life is about doing simple little things, yet we tend to focus on complicated things. These post-it notes help us recall the minor but crucial details that we often overlook in our daily routines.
+
+## Video 
+
+## Screenshots
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,8 +46,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
