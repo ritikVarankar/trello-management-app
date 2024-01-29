@@ -10,9 +10,6 @@ https://github.com/ritikVarankar/task-management-app/assets/107349946/991716ad-a
 ![individual view task](https://github.com/ritikVarankar/task-management-app/assets/107349946/de3357f7-1b3d-4c4f-a973-0b09f0261624)
 ![graph page](https://github.com/ritikVarankar/task-management-app/assets/107349946/f1942844-09fd-445e-af3f-8fc2f3b93960)
 
-## Links
-https://ritikvarankar.github.io/task-management-app/
-
 ## Instructions
 1. Please sign up
 2. Using sign up data, you can sign in
