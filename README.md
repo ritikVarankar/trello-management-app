@@ -19,6 +19,8 @@ https://ritikvarankar.github.io/task-management-app/
 3. Please create new project using profile section
 4. After creating project, please select project and add new tasks.
 5. After creating list and selecting project, project based list will be displayed.
+6. Whenever status is update, it will get current date.
+7. Graph will be displayed based on date.
 
 ## Available Scripts
 
