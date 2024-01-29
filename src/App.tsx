@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login/Login';
 import AuthContext from './components/context/AuthContext';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Loader from './components/Reusable/Loader/loader';
 import RouteComponent from './components/RouteComponent';
 import { Provider } from 'react-redux';
@@ -106,9 +106,9 @@ function App() {
       handleAutoCloseChange:handleAutoCloseChange
     }}>
       <Provider store={store}>
-        <HashRouter>
+        <BrowserRouter>
           <RouteComponent />
-        </HashRouter>
+        </BrowserRouter>
         <Loader />
        <ToastList data={toasts} position={position} removeToast={removeToast} />
       </Provider>
