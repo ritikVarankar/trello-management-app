@@ -10,8 +10,6 @@ interface TaskListProps{
     handleaddToggle:any;
 
 }
-
-
 export default function TaskList({ listStatus, list, listLength, handleviewToggle, handledeleteToggle, handleaddToggle }:TaskListProps){
 
     const handlePriority=(priority:string)=>{

@@ -9,7 +9,7 @@ function Header() {
     <div className="header-wrapper">
       <div className="header-container">
 
-        <div className="header-text">TASKAPP</div>
+        <div className="header-text">Trello Management</div>
 
         <ul className="link-wrapper">
           <li className="header-profile-wrapper">
@@ -17,11 +17,11 @@ function Header() {
               <NavLink className={({ isActive }) => (isActive ? "profile-text active" : "profile-text")} to='/tasks'>Task</NavLink>
             </div>
           </li>
-          <li className="header-profile-wrapper">
+          {/* <li className="header-profile-wrapper">
             <div className="profile-name">
               <NavLink to='/graph' className={({ isActive }) => (isActive ? "profile-text active" : "profile-text")}>Graph</NavLink>
             </div>
-          </li>
+          </li> */}
           <li className="header-profile-wrapper">
             <div className="profile-name">
               <i className="fa-regular fa-circle-user"></i>

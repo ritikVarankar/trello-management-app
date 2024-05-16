@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
-import Login from './components/Login/Login';
 import AuthContext from './components/context/AuthContext';
 import { BrowserRouter } from 'react-router-dom';
 import Loader from './components/Reusable/Loader/loader';
 import RouteComponent from './components/RouteComponent';
 import { Provider } from 'react-redux';
 import { store } from './components/redux/store';
-import { PositionsData, generateID } from './components/Reusable/Data';
+import { generateID } from './components/Reusable/Data';
 import ToastList from './components/Reusable/Toastreusbale/ToastList/ToastList';
 
 function App() {
